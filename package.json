@@ -1,0 +1,45 @@
+{
+  "name": "autumn-annihilation",
+  "version": "1.0.0",
+  "description": "Registration website for Jsweet's League of Legends fall tournament.",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "webpack": "webpack --progress --colors --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fgalaviz/autumn-annihilation.git"
+  },
+  "keywords": [
+    "Jsweet",
+    "Autumn",
+    "Annihilation",
+    "League",
+    "of",
+    "Legends",
+    "Registration",
+    "Tournament"
+  ],
+  "author": "Shadow",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fgalaviz/autumn-annihilation/issues"
+  },
+  "homepage": "https://github.com/fgalaviz/autumn-annihilation#readme",
+  "dependencies": {
+    "express": "^4.15.4",
+    "pug": "^2.0.0-rc.4",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^0.28.7",
+    "style-loader": "^0.18.2",
+    "webpack": "^3.6.0"
+  }
+}

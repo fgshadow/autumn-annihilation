@@ -1,0 +1,55 @@
+#team-registration-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#form-container {
+    margin: 25vh;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    text-align: center;
+    overflow: hidden;
+}
+
+#form-title {
+    margin-bottom: 15px;
+    color: #fff;
+    padding: 15px 20px 5px 20px;
+    border-bottom: 2px solid #1E807F;
+}
+
+#form-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+input[type="text"] {
+    background-color: rgba(0, 0, 0, 0);
+    color: #fff;
+    border-style: none;
+    border-bottom: 1px solid #1E807F;
+    width: 65%;
+}
+
+input:focus {
+    outline: none;
+}
+
+input[name="team-name"] {
+    height: 1.5em;
+}
+
+input[type="submit"] {
+    background-color: #1E807F;
+    border-style: none;
+    color: #fff;
+    padding: 5px 30px;
+    border-radius: 3px;
+}
+
+input[type="submit"]:hover {
+    background-color: lightblue;
+}
