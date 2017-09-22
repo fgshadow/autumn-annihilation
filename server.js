@@ -5,10 +5,10 @@ const app = express();
 app.set('port', process.env.PORT || 3000);
 
 // Setup virtual path to access local files
-app.use('/static', express.static(path.join('../', 'client', 'src')));
+app.use('/static', express.static(path.join(__dirname, 'client', 'src')));
 
 // Setup default views directory for templates
-app.set('views', path.join('../', 'client', 'views'));
+app.set('views', path.join(__dirname, 'client', 'views'));
 
 // Set default template engine
 app.set('view engine', 'pug');
