@@ -24,7 +24,7 @@ app.get('/team-registration', function(req, res) {
     { title: 'Autumn Annihilation | Team Registration' });
 });
 
-app.get('/thank-you', function(req, res) {
+app.post('/thank-you', function(req, res) {
     res.render('thanks',
     { title: 'Autumn Annihilation | Thank you!' });
 });

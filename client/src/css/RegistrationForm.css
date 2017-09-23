@@ -5,7 +5,7 @@
 }
 
 #form-container {
-    margin: 25vh;
+    margin: 15vh;
     background-color: rgba(0, 0, 0, 0.4);
     border-radius: 5px;
     text-align: center;
@@ -15,7 +15,7 @@
 #form-title {
     margin-bottom: 15px;
     color: #fff;
-    padding: 15px 20px 5px 20px;
+    padding: 15px 25px 5px 25px;
     border-bottom: 2px solid #1E807F;
 }
 
@@ -36,10 +36,25 @@ input[type="text"] {
 
 input:focus {
     outline: none;
+    border-bottom: 1px solid red;
 }
 
 input[name="team-name"] {
     height: 1.5em;
+}
+
+#sub-players {
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 0.9em;
+}
+
+#sub-choice {
+    margin: 5px 0px 10px 0px;
+}
+
+input[value="yes"] {
+    margin-left: 20px;
+    background-color: red;
 }
 
 input[type="submit"] {
@@ -52,4 +67,5 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
     background-color: lightblue;
+    color: #000;
 }
