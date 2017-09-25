@@ -23186,9 +23186,10 @@ var RegistrationForm = function (_Component) {
         _this.state = {
             checked: 'no',
             displaySubForm: false
+        };
 
-            //this.handleOptionChange = this.handleOptionChange.bind(this);
-        };return _this;
+        _this.handleOptionChange = _this.handleOptionChange.bind(_this);
+        return _this;
     }
 
     _createClass(RegistrationForm, [{
@@ -23196,7 +23197,7 @@ var RegistrationForm = function (_Component) {
         value: function handleOptionChange(selection) {
             this.setState({
                 checked: selection.target.value,
-                displaySubForm: this.state.displaySubForm
+                displaySubForm: !this.state.displaySubForm
             });
         }
     }, {
@@ -23248,7 +23249,7 @@ var RegistrationForm = function (_Component) {
                                     onChange: this.handleOptionChange }),
                                 _react2.default.createElement(
                                     'label',
-                                    { 'for': 'no' },
+                                    { htmlFor: 'no' },
                                     ' No'
                                 ),
                                 _react2.default.createElement('input', { type: 'radio', name: 'sub', value: 'yes',
@@ -23256,16 +23257,19 @@ var RegistrationForm = function (_Component) {
                                     onChange: this.handleOptionChange }),
                                 _react2.default.createElement(
                                     'label',
-                                    { 'for': 'yes' },
+                                    { htmlFor: 'yes' },
                                     ' Yes'
-                                ),
-                                this.state.displaySubForm ? _react2.default.createElement(
-                                    'div',
-                                    { id: 'sub-section' },
-                                    'We are subs hehe'
-                                ) : null
+                                )
                             )
                         ),
+                        this.state.displaySubForm ? _react2.default.createElement(
+                            'div',
+                            { id: 'sub-section' },
+                            _react2.default.createElement('input', { type: 'text', name: 'sub1', placeholder: '1st Sub' }),
+                            _react2.default.createElement('br', null),
+                            _react2.default.createElement('input', { type: 'text', name: 'sub2', placeholder: '2nd Sub' }),
+                            _react2.default.createElement('br', null)
+                        ) : null,
                         _react2.default.createElement('input', { type: 'submit', value: 'Submit' })
                     )
                 )
@@ -23318,7 +23322,7 @@ exports = module.exports = __webpack_require__(50)(undefined);
 
 
 // module
-exports.push([module.i, "#team-registration-form {\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n}\r\n\r\n#form-container {\r\n    margin: 15vh;\r\n    background-color: rgba(0, 0, 0, 0.4);\r\n    border-radius: 5px;\r\n    text-align: center;\r\n    overflow: hidden;\r\n}\r\n\r\n#form-title {\r\n    margin-bottom: 15px;\r\n    color: #fff;\r\n    padding: 15px 25px 5px 25px;\r\n    border-bottom: 2px solid #1E807F;\r\n}\r\n\r\n#form-content {\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    padding-bottom: 20px;\r\n}\r\n\r\ninput[type=\"text\"] {\r\n    background-color: rgba(0, 0, 0, 0);\r\n    color: #fff;\r\n    border-style: none;\r\n    border-bottom: 1px solid #1E807F;\r\n    width: 65%;\r\n}\r\n\r\ninput:focus {\r\n    outline: none;\r\n    border-bottom: 1px solid red;\r\n}\r\n\r\ninput[name=\"team-name\"] {\r\n    height: 1.5em;\r\n}\r\n\r\n#sub-players {\r\n    color: rgba(255, 255, 255, 0.6);\r\n    font-size: 0.9em;\r\n}\r\n\r\n#sub-choice {\r\n    margin: 5px 0px 10px 0px;\r\n}\r\n\r\ninput[value=\"yes\"] {\r\n    margin-left: 20px;\r\n    background-color: red;\r\n}\r\n\r\ninput[type=\"submit\"] {\r\n    background-color: #1E807F;\r\n    border-style: none;\r\n    color: #fff;\r\n    padding: 5px 30px;\r\n    border-radius: 3px;\r\n}\r\n\r\ninput[type=\"submit\"]:hover {\r\n    background-color: lightblue;\r\n    color: #000;\r\n}\r\n", ""]);
+exports.push([module.i, "#team-registration-form {\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n}\r\n\r\n#form-container {\r\n    margin: 15vh;\r\n    background-color: rgba(0, 0, 0, 0.4);\r\n    border-radius: 5px;\r\n    text-align: center;\r\n    overflow: hidden;\r\n}\r\n\r\n#form-title {\r\n    margin-bottom: 15px;\r\n    color: #fff;\r\n    padding: 15px 25px 5px 25px;\r\n    border-bottom: 2px solid #1E807F;\r\n}\r\n\r\n#form-content {\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n    padding-bottom: 20px;\r\n}\r\n\r\ninput[type=\"text\"] {\r\n    background-color: rgba(0, 0, 0, 0);\r\n    color: #fff;\r\n    border-style: none;\r\n    border-bottom: 1px solid #1E807F;\r\n    width: 65%;\r\n}\r\n\r\ninput:focus {\r\n    outline: none;\r\n    border-bottom: 1px solid red;\r\n}\r\n\r\ninput[name=\"team-name\"] {\r\n    height: 1.5em;\r\n}\r\n\r\n#sub-players {\r\n    color: rgba(255, 255, 255, 0.6);\r\n    font-size: 0.9em;\r\n}\r\n\r\n#sub-choice {\r\n    margin: 5px 0px 10px 0px;\r\n}\r\n\r\ninput[value=\"yes\"] {\r\n    margin-left: 20px;\r\n    background-color: red;\r\n}\r\n\r\n#sub-section {\r\n    width: 100%;\r\n    margin-bottom: 10px;\r\n    display: flex;\r\n    flex-direction: column;\r\n    align-items: center;\r\n}\r\n\r\ninput[type=\"submit\"] {\r\n    background-color: #1E807F;\r\n    border-style: none;\r\n    color: #fff;\r\n    padding: 5px 30px;\r\n    border-radius: 3px;\r\n}\r\n\r\ninput[type=\"submit\"]:hover {\r\n    background-color: lightblue;\r\n    color: #000;\r\n}\r\n", ""]);
 
 // exports
 

@@ -9,13 +9,13 @@ class RegistrationForm extends Component {
             displaySubForm: false
         }
 
-        //this.handleOptionChange = this.handleOptionChange.bind(this);
+        this.handleOptionChange = this.handleOptionChange.bind(this);
     }
 
     handleOptionChange(selection) {
         this.setState({
             checked: selection.target.value,
-            displaySubForm: this.state.displaySubForm
+            displaySubForm: !this.state.displaySubForm
         });
     }
 
@@ -41,20 +41,23 @@ class RegistrationForm extends Component {
                                 <input type="radio" name="sub" value="no"
                                 checked={this.state.checked === 'no'}
                                 onChange={this.handleOptionChange}/>
-                                <label for="no"> No</label>
+                                <label htmlFor="no"> No</label>
 
                                 <input type="radio" name="sub" value="yes"
                                 checked={this.state.checked === 'yes'}
                                 onChange={this.handleOptionChange}/>
-                                <label for="yes"> Yes</label>
-
-                                {
-                                    this.state.displaySubForm ?
-                                        <div id="sub-section">We are subs hehe</div>
-                                        : null
-                                }
+                                <label htmlFor="yes"> Yes</label>
                             </div>
                         </div>
+
+                        {
+                            this.state.displaySubForm ?
+                                <div id="sub-section">
+                                    <input type="text" name="sub1" placeholder="1st Sub"/><br/>
+                                    <input type="text" name="sub2" placeholder="2nd Sub"/><br/>
+                                </div>
+                                : null
+                        }
 
                         <input type="submit" value="Submit"/>
                     </div>

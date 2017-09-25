@@ -57,6 +57,14 @@ input[value="yes"] {
     background-color: red;
 }
 
+#sub-section {
+    width: 100%;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 input[type="submit"] {
     background-color: #1E807F;
     border-style: none;
