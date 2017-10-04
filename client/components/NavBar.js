@@ -1,19 +1,8 @@
 import React from 'react'
 import '../src/css/NavBar.css'
 
-const links = ['Home', 'Team'];
-
-const linksList = links.map((value, key) => {
-    let path = '/' + value.toLowerCase() + '-registration';
-
-    if (value === 'Home')
-        path = "/";
-
-    return <a href={path} key={key}>{value}</a>;
-});
-
-const NavBar = () => (
-    <nav id="navbar">
+const NavBar = (props) => (
+    <nav id="navbar" style={{borderBottom: '1px solid ' + props.color}}>
         <div id="navbar-container">
             <div id="navbar-logo">
                 <a href="https://jsweet895.com/"><h1>Jsweet's</h1></a>
@@ -21,7 +10,9 @@ const NavBar = () => (
             </div>
 
             <div id="navbar-links">
-                {linksList}
+                <a href='/'>Home</a>
+                <a href="/registration">Registration</a>
+                {/*<a href="/teams">Teams</a>*/}
             </div>
         </div>
     </nav>

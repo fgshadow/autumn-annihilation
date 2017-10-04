@@ -1,79 +1,188 @@
-#team-registration-form {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+@media screen and (max-width: 420px) {
+    #team-registration-form {
+        display: flex;
+        justify-content: center;
+    }
+
+    #form-container {
+        width: 90%;
+        margin: 2.5vh 0vw;
+        background-color: rgba(0, 0, 0, 0.4);
+        border-radius: 2px;
+        border: 2px solid #1E807F;
+        text-align: center;
+        overflow: hidden;
+    }
+
+    #form-title {
+        margin-bottom: 15px;
+        color: #fff;
+        padding: 15px 40px 5px 40px;
+        border-bottom: 1px solid #1E807F;
+        font-size: 0.8em;
+    }
+
+    #form-content {
+        padding-bottom: 25px;
+    }
+
+    #content-wrapper {
+        width: 80%;
+        overflow: hidden;
+        margin: auto;
+    }
+
+    .error {
+        color: red;
+        font-size: 12px;
+        text-align: left;
+    }
+
+
+    input[type="text"] {
+        background-color: rgba(0, 0, 0, 0);
+        color: #fff;
+        border-style: none;
+        border-bottom: 1px solid #1E807F;
+        width: 100%;
+        padding: 5px 0px;
+        margin-bottom: 10px;
+        font-size: 1.05em;
+    }
+
+    input:focus {
+        outline: none;
+        border-bottom: 1px solid red;
+    }
+
+    input[name="team-name"] {
+        height: 1.5em;
+    }
+
+    #sub-players {
+        color: rgba(255, 255, 255, 0.6);
+        font-size: 1em;
+        margin-top: 10px;
+    }
+
+    #sub-choice {
+        margin: 5px 0px;
+    }
+
+    input[value="yes"] {
+        margin-left: 20px;
+    }
+
+    #sub-section {
+        width: 100%;
+    }
+
+    input[type="submit"] {
+        background-color: #1E807F;
+        border-style: none;
+        color: #fff;
+        padding: 10px 0px;
+        border-radius: 3px;
+        margin-top: 10px;
+        width: 100%;
+    }
+
+    input[type="submit"]:hover {
+        background-color: lightblue;
+        color: #000;
+    }
 }
 
-#form-container {
-    margin: 15vh;
-    background-color: rgba(0, 0, 0, 0.4);
-    border-radius: 5px;
-    text-align: center;
-    overflow: hidden;
-}
+@media only screen and (min-width: 421px) {
+    #team-registration-form {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-#form-title {
-    margin-bottom: 15px;
-    color: #fff;
-    padding: 15px 25px 5px 25px;
-    border-bottom: 2px solid #1E807F;
-}
+    #form-container {
+        margin: 15vh;
+        background-color: rgba(0, 0, 0, 0.4);
+        border-radius: 5px;
+        text-align: center;
+        overflow: hidden;
+    }
 
-#form-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-bottom: 20px;
-}
+    #form-title {
+        margin-bottom: 15px;
+        color: #fff;
+        padding: 15px 40px 5px 40px;
+        border-bottom: 2px solid #1E807F;
+        font-size: 1.1em;
+    }
 
-input[type="text"] {
-    background-color: rgba(0, 0, 0, 0);
-    color: #fff;
-    border-style: none;
-    border-bottom: 1px solid #1E807F;
-    width: 65%;
-}
+    #form-content {
+        padding-bottom: 25px;
+    }
 
-input:focus {
-    outline: none;
-    border-bottom: 1px solid red;
-}
+    #content-wrapper {
+        width: 80%;
+        overflow: hidden;
+        margin: auto;
+    }
 
-input[name="team-name"] {
-    height: 1.5em;
-}
+    .error {
+        color: red;
+        font-size: 12px;
+        text-align: left;
+    }
 
-#sub-players {
-    color: rgba(255, 255, 255, 0.6);
-    font-size: 0.9em;
-}
 
-#sub-choice {
-    margin: 5px 0px 10px 0px;
-}
+    input[type="text"] {
+        background-color: rgba(0, 0, 0, 0);
+        color: #fff;
+        border-style: none;
+        border-bottom: 1px solid #1E807F;
+        width: 100%;
+        padding: 5px 0px;
+        margin-bottom: 10px;
+        font-size: 1.05em;
+    }
 
-input[value="yes"] {
-    margin-left: 20px;
-    background-color: red;
-}
+    input:focus {
+        outline: none;
+        border-bottom: 1px solid red;
+    }
 
-#sub-section {
-    width: 100%;
-    margin-bottom: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+    input[name="team-name"] {
+        height: 1.5em;
+    }
 
-input[type="submit"] {
-    background-color: #1E807F;
-    border-style: none;
-    color: #fff;
-    padding: 5px 30px;
-    border-radius: 3px;
-}
+    #sub-players {
+        color: rgba(255, 255, 255, 0.6);
+        font-size: 1em;
+        margin-top: 10px;
+    }
 
-input[type="submit"]:hover {
-    background-color: lightblue;
-    color: #000;
+    #sub-choice {
+        margin: 5px 0px;
+    }
+
+    input[value="yes"] {
+        margin-left: 20px;
+        background-color: red;
+    }
+
+    #sub-section {
+        width: 100%;
+    }
+
+    input[type="submit"] {
+        background-color: #1E807F;
+        border-style: none;
+        color: #fff;
+        padding: 5px 30px;
+        border-radius: 3px;
+        margin-top: 10px;
+    }
+
+    input[type="submit"]:hover {
+        background-color: lightblue;
+        color: #000;
+    }
 }

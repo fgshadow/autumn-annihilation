@@ -1,41 +1,87 @@
-#navbar {
-    height: auto;
-    width: 100%;
-    color: #fff;
-    text-align: center;
-    border-bottom: 1px solid #1E807F;
-    background-color: rgba(0, 0, 0, 0.6);
+@media only screen and (max-width: 420px) {
+    #navbar {
+        height: auto;
+        width: 100%;
+        color: #fff;
+        text-align: center;
+        border-bottom: 1px solid #1E807F;
+        background-color: rgba(0, 0, 0, 0.6);
+    }
+
+    #navbar-container {
+        padding: 20px 0px;
+    }
+
+    #navbar-logo {
+        font-size: 1.3em;
+    }
+
+    #navbar-logo a {
+        color: red;
+        text-decoration: none;
+    }
+
+    #navbar-links {
+        margin-top: 10px;
+    }
+
+    #navbar-links a {
+        text-decoration: none;
+        margin-right: 20px;
+        font-size: 1.2em;
+        color: #fff;
+        transition: 0.5s ease-in-out;
+    }
+
+    #navbar-links a:last-child {
+        margin-right: 0px;
+    }
+
+    #navbar-links a:hover {
+        color: red;
+    }
 }
 
-#navbar-container {
-    padding: 20px 0px;
-}
+@media only screen and (min-width: 421px) {
+    #navbar {
+        height: auto;
+        width: 100%;
+        color: #fff;
+        text-align: center;
+        border-bottom: 1px solid #1E807F;
+        background-color: rgba(0, 0, 0, 0.6);
+    }
 
-#navbar-logo {
-    font-size: 1.8em;
-}
+    #navbar-container {
+        padding: 20px 0px;
+    }
 
-#navbar-logo a {
-    color: red;
-    text-decoration: none;
-}
+    #navbar-logo {
+        font-size: 1.8em;
+    }
 
-#navbar-links {
-    margin-top: 10px;
-}
+    #navbar-logo a {
+        color: red;
+        text-decoration: none;
+    }
 
-#navbar-links a {
-    text-decoration: none;
-    margin-right: 20px;
-    font-size: 1.2em;
-    color: #fff;
-    transition: 0.5s ease-in-out;
-}
+    #navbar-links {
+        margin-top: 10px;
+    }
 
-#navbar-links a:last-child {
-    margin-right: 0px;
-}
+    #navbar-links a {
+        text-decoration: none;
+        margin-right: 20px;
+        font-size: 1.2em;
+        color: #fff;
+        transition: 0.5s ease-in-out;
+    }
 
-#navbar-links a:hover {
-    color: red;
+    #navbar-links a:last-child {
+        margin-right: 0px;
+    }
+
+    #navbar-links a:hover {
+        color: red;
+    }
 }

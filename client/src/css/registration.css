@@ -1,0 +1,40 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, sans-serif;
+}
+
+@media only screen and (max-width: 420px) {
+    body {
+        background-image: url('../img/backgrounds/shadow-isles-wallpaper.jpg');
+        background-size: auto 125vh;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-color: #000;
+    }
+
+    #root {
+        position: relative;
+        z-index: 2;
+        height: 125vh;
+        width: 100vw;
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+}
+
+@media only screen and (min-width: 421px) {
+    body {
+        background-image: url('../img/backgrounds/shadow-isles-wallpaper.jpg');
+        background-size: auto 125vh;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    #root {
+        position: relative;
+        z-index: 2;
+        height: 125vh;
+        width: 100vw;
+        background-color: rgba(0, 0, 0, 0.4);
+    }
+}

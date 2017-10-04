@@ -1,0 +1,113 @@
+
+@media only screen and (max-width: 420px) {
+    #footer {
+        background-color: rgba(0, 0, 0, 1);
+        border-top: 1px solid #1E807F;
+        padding: 40px 0px 60px 0px;
+        color: #fff;
+    }
+
+    #footer-wrapper {
+        width: 80%;
+        margin: auto;
+    }
+
+    #social-icons {
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #social-icons img {
+        opacity: 0.5;
+    }
+
+    #twitch {
+        height: 40px;
+        margin-right: 20px;
+    }
+
+    #twitter {
+        height: 50px;
+        margin-right: 10px;
+    }
+
+    #discord {
+        height: 55px;
+    }
+
+    #social-icons img:hover {
+        opacity: 1;
+    }
+
+    #footer-wrapper hr {
+        border: 0;
+        height: 1px;
+        opacity: 0.6;
+        /*background-image: linear-gradient(to right, rgba(30, 128, 127, 0.25), rgba(30, 128, 127, 0.75), rgba(30, 128, 127, 0.25));
+    */}
+
+    #credits {
+        margin-top: 20px;
+        opacity: 0.5;
+        text-align: center;
+    }
+}
+
+
+@media only screen and (min-width: 421px) {
+    #footer {
+        background-color: rgba(0, 0, 0, 1);
+        border-top: 1px solid #1E807F;
+        padding: 50px 0px 80px 0px;
+        color: #fff;
+    }
+
+    #footer-wrapper {
+        width: 50%;
+        margin: auto;
+    }
+
+    #social-icons {
+        margin-bottom: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #social-icons img {
+        opacity: 0.5;
+    }
+
+    #twitch {
+        height: 50px;
+        margin-right: 20px;
+    }
+
+    #twitter {
+        height: 60px;
+        margin-right: 10px;
+    }
+
+    #discord {
+        height: 65px;
+    }
+
+    #social-icons img:hover {
+        opacity: 1;
+    }
+
+    #footer-wrapper hr {
+        border: 0;
+        height: 1px;
+        opacity: 0.6;
+        /*background-image: linear-gradient(to right, rgba(30, 128, 127, 0.25), rgba(30, 128, 127, 0.75), rgba(30, 128, 127, 0.25));
+    */}
+
+    #credits {
+        margin-top: 20px;
+        opacity: 0.5;
+        text-align: center;
+    }
+}

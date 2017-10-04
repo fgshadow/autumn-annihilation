@@ -4,12 +4,12 @@ import NavBar from './components/NavBar'
 import RegistrationForm from './components/RegistrationForm'
 import Footer from './components/Footer'
 
-const TeamRegistrationPage = () => (
-    <div id="team-registration-page">
+const Registration = () => (
+    <div id="registration-page">
         <NavBar/>
         <RegistrationForm/>
         <Footer/>
     </div>
 );
 
-ReactDOM.render(<TeamRegistrationPage/>, document.getElementById('root'));
+ReactDOM.render(<Registration/>, document.getElementById('root'));
