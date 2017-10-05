@@ -1,4 +1,4 @@
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 480px) {
     #navbar {
         height: auto;
         width: 100%;
@@ -42,7 +42,7 @@
     }
 }
 
-@media only screen and (min-width: 421px) {
+@media only screen and (min-width: 481px) {
     #navbar {
         height: auto;
         width: 100%;

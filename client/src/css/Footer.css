@@ -1,5 +1,5 @@
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 480px) {
     #footer {
         background-color: rgba(0, 0, 0, 1);
         border-top: 1px solid #1E807F;
@@ -56,7 +56,7 @@
 }
 
 
-@media only screen and (min-width: 421px) {
+@media only screen and (min-width: 481px) {
     #footer {
         background-color: rgba(0, 0, 0, 1);
         border-top: 1px solid #1E807F;

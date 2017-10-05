@@ -6,7 +6,7 @@ const HomeContent = () => (
     <div id="home-content">
         <div id="home-content-wrapper">
             <img src={LoLHarrowing}/>
-            <p style={{color: 'red', textAlign: 'center', fontSize: '1.2em', marginBottom: '10px'}}>
+            <p style={{color: 'red', textAlign: 'center', fontSize: '1.2em', margin: '0px auto 10px auto', width: '92.5%'}}>
                 "All shall hail me! My darkness will sweep across the world!"<br/>
                 - Little Devil Teemo
             </p><hr style={{height: '1px', backgroundColor: '#FBC02D', border: 'none', opacity: '0.6'}}/>

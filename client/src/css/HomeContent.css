@@ -1,7 +1,7 @@
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 480px) {
     #home-content {
-        width: 90%;
+        width: 90vw;
         margin: 2.5vh auto;
     }
 
@@ -43,10 +43,54 @@
 }
 
 
-@media screen and (min-width: 421px) {
+@media screen and (min-width: 481px) and (max-width: 768px){
     #home-content {
-        width: 35%;
-        margin: 15vh auto;
+        width: 75vw;
+        margin: 10vh auto;
+    }
+
+    #home-content-wrapper {
+        color: #fff;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 20px 30px 30px 30px;
+        border-radius: 5px;
+        text-align: center;
+    }
+
+    #home-content-wrapper img {
+        width: 100%;
+        height: auto;
+        border: 1px solid #A36334;
+    }
+
+    #home-content-wrapper p {
+        margin-top: 15px;
+        font-size: 1.15em;
+        text-align: left;
+    }
+
+    a#button {
+        margin-top: 10px;
+        display: inline-block;
+        background-color: #1E807F;
+        border-style: none;
+        color: #fff;
+        padding: 10px 30px;
+        border-radius: 3px;
+        text-decoration: none;
+        font-size: 1.2em;
+    }
+
+    a#button:hover {
+        background-color: lightblue;
+        color: #000;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    #home-content {
+        width: 650px;
+        margin: 7vh auto;
     }
 
     #home-content-wrapper {
